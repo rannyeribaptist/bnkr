@@ -1,63 +1,57 @@
 @import "variables";
 
 .section {
-  overflow: hidden;
+  // @include breakpoint("medium") { min-height: 80vh }
 
-  @include breakpoint("medium") { min-height: 80vh }
+  // &--fixed-size {
+  //   height: 80vh;
+  //
+  //   @include breakpoint("small-height") { min-height: 100vh; height: unset; }
+  // }
 
-  &--fixed-size {
-    height: 80vh;
+  &--start { margin-top: 116px }
 
-    @include breakpoint("small-height") { min-height: 100vh; height: unset; }
+  &--bg-dark {
+    background-image: url(../images/background-1.png);
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    // height: 100%;
     padding: 30px;
 
     @include breakpoint("limiter");
     @include breakpoint("small-height") { padding-top: 80px; }
   }
 
+  // &--about {
+  //   background-image: url(http://via.placeholder.com/1920x1080);
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   min-height: unset;
+  //
+  //   @include breakpoint("medium") {
+  //     padding: 25% 0 5% 0;
+  //   }
+  // }
+  //
+  // &--presentation {
+  //   background-image: url(http://via.placeholder.com/1920x1080);
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //
+  //   color: white;
+  //
+  //   h1 {
+  //     @include breakpoint("medium") {
+  //       max-width: 40%;
+  //       text-align: center;
+  //     }
+  //   }
+  // }
+
   @include colors("background-color");
-
-  &--about {
-    background-image: url(http://via.placeholder.com/1920x1080);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: unset;
-
-    @include breakpoint("medium") {
-      padding: 25% 0 5% 0;
-    }
-  }
-
-  &--presentation {
-    background-image: url(http://via.placeholder.com/1920x1080);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    color: white;
-
-    h1 {
-      @include breakpoint("medium") {
-        max-width: 40%;
-        text-align: center;
-      }
-    }
-  }
-
-  &--bg-texture {
-    background-size: cover;
-  }
-}
-
-footer {
-  padding-bottom: 5px;
-  text-align: center;
-
-  .fas, .fab, .fa { color: white; font-size: 20px }
 }
