@@ -1,15 +1,18 @@
 @import "variables";
 
 .card {
+  border-radius: 30px;
   margin: 15px;
+
   &__content {
-    background-color: $gray;
     text-align: center;
     padding: 30px 50px;
-    border-radius: 30px;
+    font-weight: bold;
 
     img { max-width: 100%; }
 
     @include breakpoint("small-up") { padding: 20px 40px }
   }
+
+  @include colors("background-color");
 }
