@@ -611,6 +611,46 @@
     opacity: 100%; }
   100% {
     opacity: 0%; } }
+.service-card {
+  background-color: #CECECE;
+  color: black;
+  text-align: center;
+  margin-bottom: 5px; }
+  .service-card__content {
+    padding: 25px; }
+  .service-card__icon {
+    width: 50%;
+    height: auto; }
+  .service-card__title {
+    font-weight: bold; }
+  .service-card__description {
+    font-weight: lighter; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
 .footer {
   background-color: #262626;
   padding: 5%; }
