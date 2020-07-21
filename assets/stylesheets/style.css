@@ -1,0 +1,830 @@
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.section {
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .section {
+      min-height: 80vh; } }
+  .section--fixed-size {
+    height: 80vh; }
+    @media (max-height: 500px) {
+      .section--fixed-size {
+        min-height: 100vh;
+        height: unset; } }
+  .section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto; }
+    @media (max-height: 500px) {
+      .section__content {
+        padding-top: 80px; } }
+  .section--blue {
+    background-color: #13B3F2; }
+  .section--black {
+    background-color: #0D0D0D; }
+  .section--pink {
+    background-color: #F23D5E; }
+  .section--light-gray {
+    background-color: #757876; }
+  .section--gradient {
+    background-image: linear-gradient(45deg, #F23D5E, #c533f5);
+    color: white;
+    position: relative;
+    min-height: 800px;
+    max-height: 60vh; }
+    .section--gradient__content {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0; }
+  .section--about {
+    background-image: url(http://via.placeholder.com/1920x1080);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: unset; }
+    @media (min-width: 768px) {
+      .section--about {
+        padding: 25% 0 5% 0; } }
+  .section--presentation {
+    background-image: url(http://via.placeholder.com/1920x1080);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; }
+    @media (min-width: 768px) {
+      .section--presentation h1 {
+        max-width: 40%;
+        text-align: center; } }
+
+footer {
+  padding-bottom: 5px;
+  text-align: center; }
+  footer .fas, footer .fab, footer .fa {
+    color: white;
+    font-size: 20px; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.split {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .split {
+      flex-direction: row;
+      text-align: left; } }
+  .split--inverted {
+    flex-direction: column-reverse; }
+    @media (min-width: 768px) {
+      .split--inverted {
+        flex-direction: row; } }
+  .split__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0; }
+    @media (min-width: 768px) {
+      .split__content {
+        width: 50%;
+        padding: 0 50px;
+        margin: 0; } }
+    @media (min-width: 1200px) {
+      .split__content {
+        padding: 0 100px; } }
+    .split__content--blue {
+      background-color: #13B3F2; }
+    .split__content--black {
+      background-color: #0D0D0D; }
+    .split__content--pink {
+      background-color: #F23D5E; }
+    .split__content--light-gray {
+      background-color: #757876; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.title {
+  font-size: 30px; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 40px; } }
+
+@media (min-width: 768px) {
+  .subtitle {
+    max-width: 60%; } }
+@media (min-width: 1200px) {
+  .subtitle {
+    font-size: 20px; } }
+
+.text--bold {
+  font-weight: bold; }
+.text--small {
+  font-size: 20px; }
+.text--center {
+  text-align: center; }
+.text--blue {
+  color: #13B3F2; }
+.text--black {
+  color: #0D0D0D; }
+.text--pink {
+  color: #F23D5E; }
+.text--white {
+  color: white; }
+.text--light-gray {
+  color: #757876; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.button {
+  border: 0;
+  padding: 10px 20px;
+  color: #4A474A;
+  font-size: 20px;
+  transition: padding 0.2s;
+  cursor: pointer;
+  width: fit-content; }
+  .button--rounded {
+    border-radius: 10px; }
+  .button--blue {
+    background-color: #13B3F2; }
+  .button--black {
+    background-color: #0D0D0D; }
+  .button--pink {
+    background-color: #F23D5E; }
+  .button--light-gray {
+    background-color: #757876; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.columns {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .columns--spaced {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+  .columns--left {
+    text-align: left; }
+
+.column {
+  display: inline-block; }
+  @media (min-width: 425px) {
+    .column--sm-1 {
+      width: 99%; }
+    .column--sm-2 {
+      width: 49%; }
+    .column--sm-3 {
+      width: 32%; }
+    .column--sm-4 {
+      width: 24%; }
+    .column--sm-5 {
+      width: 19%; }
+    .column--sm-6 {
+      width: 15%; } }
+  @media (min-width: 768px) {
+    .column--md-1 {
+      width: 99%; }
+    .column--md-2 {
+      width: 49%; }
+    .column--md-3 {
+      width: 32%; }
+    .column--md-4 {
+      width: 24%; }
+    .column--md-5 {
+      width: 19%; }
+    .column--md-6 {
+      width: 15%; } }
+  @media (min-width: 1200px) {
+    .column--lg-1 {
+      width: 99%; }
+    .column--lg-2 {
+      width: 49%; }
+    .column--lg-3 {
+      width: 32%; }
+    .column--lg-4 {
+      width: 24%; }
+    .column--lg-5 {
+      width: 19%; }
+    .column--lg-6 {
+      width: 15%; } }
+  @media (min-width: 1800px) {
+    .column--xl-1 {
+      width: 99%; }
+    .column--xl-2 {
+      width: 49%; }
+    .column--xl-3 {
+      width: 32%; }
+    .column--xl-4 {
+      width: 24%; }
+    .column--xl-5 {
+      width: 19%; }
+    .column--xl-6 {
+      width: 15%; } }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4A474A;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .navbar a {
+    font-weight: 600;
+    color: white; }
+  .navbar--static {
+    position: unset; }
+  .navbar__padding {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .navbar__mobile {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .navbar__mobile {
+        display: none; } }
+  .navbar__content {
+    text-align: center;
+    display: none;
+    max-width: 1400px;
+    margin: 0 auto; }
+    .navbar__content img {
+      display: none; }
+    @media (min-width: 768px) {
+      .navbar__content {
+        width: 100%;
+        text-align: initial; }
+        .navbar__content img {
+          display: initial; } }
+    @media (min-width: 768px) {
+      .navbar__content {
+        display: block; } }
+  .navbar__links {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .navbar__links li {
+      margin: 15px 0; }
+    @media (min-width: 768px) {
+      .navbar__links {
+        float: right;
+        width: fit-content; }
+        .navbar__links li {
+          display: inline;
+          margin: 0 15px; } }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.testimonial {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; }
+  .testimonial__content {
+    overflow-x: scroll;
+    display: -webkit-inline-box;
+    width: -webkit-fill-available; }
+  .testimonial__card {
+    text-align: center;
+    width: 300px;
+    margin: 15px; }
+    .testimonial__card img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.color-box {
+  position: relative; }
+  .color-box--blue {
+    background-color: #13B3F2; }
+  .color-box--black {
+    background-color: #0D0D0D; }
+  .color-box--pink {
+    background-color: #F23D5E; }
+  .color-box--light-gray {
+    background-color: #757876; }
+  .color-box__content {
+    width: 140%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-left: -30px; }
+    @media (min-width: 768px) {
+      .color-box__content {
+        height: 140%;
+        width: 100vw;
+        left: 0;
+        margin: 0; } }
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  display: inline-block; }
+
+.underline:after {
+  display: block;
+  content: '';
+  border-bottom: solid 1.5px #fff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%; }
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.card {
+  margin: 15px; }
+  .card__content {
+    background-color: #4A474A;
+    text-align: center;
+    padding: 30px 50px;
+    border-radius: 30px; }
+    .card__content img {
+      max-width: 100%; }
+    @media (min-width: 425px) {
+      .card__content {
+        padding: 20px 40px; } }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.footer {
+  background-color: #4A474A;
+  padding: 5%; }
+  .footer__content {
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto; }
+  @media (min-width: 768px) {
+    .footer__links {
+      position: absolute;
+      left: 0;
+      bottom: 0; } }
+  .footer a {
+    margin: 2px 0;
+    color: white;
+    font-family: 'gothammedium', 'gothamlight', Arial;
+    font-weight: bold; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.fancy-form {
+  text-align: left; }
+  .fancy-form input, .fancy-form textarea {
+    display: block;
+    width: 90%;
+    height: 27px;
+    margin: 10px 0 15px 0;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #ffffffa6;
+    border-radius: 5px;
+    border: none; }
+  .fancy-form textarea {
+    height: unset; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.portfolio-card {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-height: 150px;
+  max-width: 250px;
+  margin: 5px; }
+  .portfolio-card__background {
+    width: 100%;
+    height: 100%; }
+  .portfolio-card__content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0, 0, 0.28, 1.03);
+    background-color: #ffffffad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .portfolio-card__content:hover {
+      opacity: 1; }
+
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
+@keyframes bgcolor {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
+.project {
+  position: relative;
+  min-height: 90vh; }
+  .project__image {
+    background-color: #4a90e2;
+    text-align: center;
+    height: 400px;
+    overflow: hidden; }
+    @media (min-width: 768px) {
+      .project__image {
+        background-color: transparent;
+        min-height: 600px;
+        width: 48%;
+        display: inline-block;
+        margin: 0 20px 0 0; } }
+    .project__image img {
+      height: 100%;
+      max-width: 100%; }
+      @media (min-width: 768px) {
+        .project__image img {
+          width: 100%;
+          height: auto; } }
+  .project__content {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .project__content {
+        text-align: justify;
+        vertical-align: top;
+        display: inline-block;
+        width: 48%; } }
+    .project__content img {
+      max-width: 100%;
+      height: auto; }
+      @media (min-width: 1200px) {
+        .project__content img {
+          width: 44%;
+          max-width: 650px;
+          position: absolute;
+          left: 0;
+          right: 10%;
+          margin: 0 auto;
+          box-shadow: 0px 0px 10px grey; } }
+  @media (min-width: 1200px) {
+    .project__floating-text {
+      width: 55%;
+      float: right; } }
+
+body {
+  margin: 0;
+  font-family: Montserrat, Arial;
+  line-height: 1.5;
+  color: white; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.center {
+  margin: 0 auto; }
+
+.logo-small {
+  height: 70px; }
+
+.text-center {
+  text-align: center; }
+
+.image {
+  max-width: 100%; }
+  @media (min-width: 425px) {
+    .image {
+      max-width: 70%; } }
+  @media (min-width: 768px) {
+    .image {
+      max-width: 100%; } }
+
+.logo-footer {
+  width: 150px;
+  height: auto; }
+
+/*# sourceMappingURL=style.css.map */

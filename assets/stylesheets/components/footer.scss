@@ -1,0 +1,28 @@
+@import "variables";
+
+.footer {
+  background-color: $gray;
+  padding: 5%;
+
+  &__content {
+    position: relative;
+    text-align: center;
+
+    @include breakpoint("limiter");
+  }
+
+  &__links {
+    @include breakpoint("medium") {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  a {
+    margin: 2px 0;
+    color: white;
+    font-family: 'gothammedium', 'gothamlight', Arial;
+    font-weight: bold;
+  }
+}
