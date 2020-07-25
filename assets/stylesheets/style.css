@@ -603,23 +603,49 @@
   100% {
     opacity: 0%; } }
 .footer {
-  background-color: #262626;
+  background-color: black;
   padding: 5%; }
+  .footer img {
+    max-width: 80%;
+    margin: 10%; }
+    @media (min-width: 768px) {
+      .footer img {
+        margin: unset; } }
   .footer__content {
-    position: relative;
     text-align: center;
     max-width: 1400px;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .footer__content {
+        display: flex;
+        flex-direction: row;
+        align-items: space-around; } }
+  .footer__icons {
+    display: flex;
+    justify-content: space-around; }
+    .footer__icons img {
+      max-width: 30px; }
+    @media (min-width: 768px) {
+      .footer__icons {
+        max-width: 250px;
+        margin-left: 10%;
+        width: unset; } }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .footer__links a {
+      font-weight: lighter; }
+    @media (min-width: 768px) {
+      .footer__links {
+        text-align: left;
+        margin-top: 50px; } }
+    @media (min-width: 1200px) {
+      .footer__links {
+        margin-top: 70px; } }
   @media (min-width: 768px) {
-    .footer__links {
-      position: absolute;
-      left: 0;
-      bottom: 0; } }
-  .footer a {
-    margin: 2px 0;
-    color: white;
-    font-family: 'gothammedium', 'gothamlight', Arial;
-    font-weight: bold; }
+    .footer__element {
+      width: 33%; } }
 
 @font-face {
   font-family: "nexabold";
