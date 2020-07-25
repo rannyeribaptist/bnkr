@@ -48,6 +48,12 @@
     opacity: 100%; }
   100% {
     opacity: 0%; } }
+.section--fixed-size {
+  height: 80vh; }
+  @media (max-height: 500px) {
+    .section--fixed-size {
+      min-height: 100vh;
+      height: unset; } }
 .section--start {
   margin-top: 116px; }
 .section--bg-dark {
@@ -60,6 +66,38 @@
   @media (max-height: 500px) {
     .section__content {
       padding-top: 80px; } }
+.section--about {
+  background-image: url(../images/BNKR2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: unset !important; }
+  @media (min-width: 768px) {
+    .section--about {
+      padding: 15% 0 15% 0; }
+      .section--about .section__content {
+        text-align: left; } }
+.section--presentation {
+  background-image: url(../images/BNKR.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content; }
+  .section--presentation .section__content {
+    padding: 10% 5% 0 5%; }
+  .section--presentation .button {
+    margin: 0 auto; }
+  @media (min-width: 768px) {
+    .section--presentation .button {
+      margin: unset; } }
+  @media (min-width: 768px) {
+    .section--presentation h1 {
+      text-align: left; } }
+.section--bg1 {
+  background-image: url(../images/background-1.png); }
+.section--bg2 {
+  background-image: url(../images/background-2.png); }
+@media (min-width: 768px) {
+  .section {
+    min-height: 80vh; } }
 .section--white {
   background-color: white; }
 .section--black {
@@ -428,99 +466,6 @@
           display: inline;
           margin: 0 15px; } }
 
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.testimonial {
-  overflow: hidden;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto; }
-  .testimonial__content {
-    overflow-x: scroll;
-    display: -webkit-inline-box;
-    width: -webkit-fill-available; }
-  .testimonial__card {
-    text-align: center;
-    width: 300px;
-    margin: 15px; }
-    .testimonial__card img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px; }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.color-box {
-  position: relative; }
-  .color-box--white {
-    background-color: white; }
-  .color-box--black {
-    background-color: black; }
-  .color-box--yellow {
-    background-color: #FFFF54; }
-  .color-box--gray {
-    background-color: #262626; }
-  .color-box--light-gray {
-    background-color: #CECECE; }
-  .color-box__content {
-    width: 140%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    margin-left: -30px; }
-    @media (min-width: 768px) {
-      .color-box__content {
-        height: 140%;
-        width: 100vw;
-        left: 0;
-        margin: 0; } }
-
 .underline {
   position: relative;
   text-decoration: none;
@@ -566,6 +511,12 @@
 .card {
   border-radius: 30px;
   margin: 15px; }
+  .card--about {
+    background-image: url(../images/textura-icones.png);
+    background-size: contain; }
+    .card--about img {
+      max-width: 100%;
+      max-height: 250px; }
   .card__content {
     text-align: center;
     padding: 30px 50px;

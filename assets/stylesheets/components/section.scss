@@ -1,13 +1,11 @@
 @import "variables";
 
 .section {
-  // @include breakpoint("medium") { min-height: 80vh }
+  &--fixed-size {
+    height: 80vh;
 
-  // &--fixed-size {
-  //   height: 80vh;
-  //
-  //   @include breakpoint("small-height") { min-height: 100vh; height: unset; }
-  // }
+    @include breakpoint("small-height") { min-height: 100vh; height: unset; }
+  }
 
   &--start { margin-top: 116px }
 
@@ -16,42 +14,57 @@
   }
 
   &__content {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     text-align: center;
-    // height: 100%;
     padding: 30px;
 
     @include breakpoint("limiter");
     @include breakpoint("small-height") { padding-top: 80px; }
   }
 
-  // &--about {
-  //   background-image: url(http://via.placeholder.com/1920x1080);
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //   min-height: unset;
-  //
-  //   @include breakpoint("medium") {
-  //     padding: 25% 0 5% 0;
-  //   }
-  // }
-  //
-  // &--presentation {
-  //   background-image: url(http://via.placeholder.com/1920x1080);
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //
-  //   color: white;
-  //
-  //   h1 {
-  //     @include breakpoint("medium") {
-  //       max-width: 40%;
-  //       text-align: center;
-  //     }
-  //   }
-  // }
+  &--about {
+    background-image: url(../images/BNKR2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: unset !important;
 
+    @include breakpoint("medium") {
+      padding: 15% 0 15% 0;
+
+      .section__content {
+        text-align: left;
+      }
+    }
+  }
+
+  &--presentation {
+    background-image: url(../images/BNKR.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+
+    .section__content { padding: 10% 5% 0 5% }
+
+    .button { margin: 0 auto }
+
+    @include breakpoint("medium") {
+      .button { margin: unset }
+    }
+
+    h1 {
+      @include breakpoint("medium") {
+        text-align: left;
+      }
+    }
+  }
+
+  &--bg1 {
+    background-image: url(../images/background-1.png);
+  }
+
+  &--bg2 {
+    background-image: url(../images/background-2.png);
+  }
+
+  @include breakpoint("medium") { min-height: 80vh }
   @include colors("background-color");
 }
